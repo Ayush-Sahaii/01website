@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahai Movie World - Search Movies</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Sahai Movie World</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="movies.html">Search Movies</a>
+      <a href="wishlist.html">My Wishlist</a>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <section class="search-panel">
+      <h1>Search New Release Movies</h1>
+      <p>Type a movie title or keyword and press Search to find new releases.</p>
+      <div class="search-box">
+        <input id="searchInput" type="search" placeholder="Search by title..." />
+        <button id="searchButton" class="button">Search</button>
+      </div>
+      <p id="statusMessage" class="status-message">Enter a movie title and click Search. If the API key is not configured, sample movies will be shown.</p>
+    </section>
+
+    <section class="movie-results">
+      <h2>Search Results</h2>
+      <div id="resultsGrid" class="grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Search new releases and add movies to your wishlist.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
